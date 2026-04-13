@@ -1,8 +1,8 @@
 # Báo Cáo Cá Nhân — Lab Day 08: RAG Pipeline
 
-**Họ và tên:** ___________
-**Vai trò trong nhóm:** ___________
-**Ngày nộp:** 2026-04-13
+**Họ và tên:** Nguyễn Trương Công Nhị
+**Vai trò trong nhóm:** Làm sprint 2, 3
+**Ngày nộp:** 13-04-2026
 **Độ dài yêu cầu:** 500–800 từ
 
 ---
@@ -42,5 +42,3 @@ Sau khi thêm LLM Rerank, variant trả lời đầy đủ cả 5 bước escala
 Tôi sẽ thêm bước **abstain detection trước LLM Rerank**: nếu tất cả candidates có cosine score < 0.3 thì trả về "Không đủ dữ liệu" ngay, không rerank. Lý do: q09 (ERR-403-AUTH) bị giảm completeness sau LLM Rerank vì model cố tìm chunk "gần nhất" dù không có thông tin — dẫn đến answer sai hướng. Ngưỡng score thấp là tín hiệu rõ ràng nhất cho abstain case và không cần LLM call thêm để quyết định.
 
 ---
-
-*Lưu file này với tên: `reports/individual/[ten_ban].md`*
